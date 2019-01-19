@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8608CD65E6C6F9C63B0D69CF /* Pods_Zooper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */; };
+		932D091121F39E5C00BD2450 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091021F39E5B00BD2450 /* API.swift */; };
+		932D091321F39E6200BD2450 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 932D091221F39E6200BD2450 /* schema.json */; };
+		932D091521F39EAB00BD2450 /* posts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 932D091421F39EAB00BD2450 /* posts.graphql */; };
+		932D091821F3A34300BD2450 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091721F3A34300BD2450 /* PostModel.swift */; };
+		932D091B21F3A4E900BD2450 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091A21F3A4E900BD2450 /* Apollo.swift */; };
+		932D091D21F3A70F00BD2450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932D091C21F3A70F00BD2450 /* Main.storyboard */; };
+		933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35521F39C54002EB839 /* AppDelegate.swift */; };
+		933ED35821F39C54002EB839 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35721F39C54002EB839 /* HomeViewController.swift */; };
+		933ED35E21F39C54002EB839 /* Zooper_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */; };
+		933ED36021F39C56002EB839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933ED35F21F39C56002EB839 /* Assets.xcassets */; };
+		933ED36321F39C56002EB839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933ED36121F39C56002EB839 /* LaunchScreen.storyboard */; };
+		9355393121F3E0D9008C7694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355393021F3E0D9008C7694 /* Colors.swift */; };
+		938A1EBA21F3B19700AC94EE /* SampleSwipeableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EA921F3B19200AC94EE /* SampleSwipeableCard.swift */; };
+		938A1EBB21F3B19700AC94EE /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EAA21F3B19300AC94EE /* SwipeableCardViewDataSource.swift */; };
+		938A1EBC21F3B19700AC94EE /* SwipeableCardViewCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938A1EAB21F3B19300AC94EE /* SwipeableCardViewCard.xib */; };
+		938A1EBD21F3B19700AC94EE /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EAC21F3B19300AC94EE /* UIView+Constraints.swift */; };
+		938A1EBE21F3B19700AC94EE /* SampleSwipeableCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938A1EAD21F3B19300AC94EE /* SampleSwipeableCard.xib */; };
+		938A1EBF21F3B19700AC94EE /* CGRect+SwipeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EAE21F3B19400AC94EE /* CGRect+SwipeAdditions.swift */; };
+		938A1EC021F3B19700AC94EE /* SwipeableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EAF21F3B19400AC94EE /* SwipeableViewDelegate.swift */; };
+		938A1EC121F3B19700AC94EE /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB021F3B19400AC94EE /* SwipeDirection.swift */; };
+		938A1EC221F3B19700AC94EE /* StaticShadowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB121F3B19400AC94EE /* StaticShadowHeaderView.swift */; };
+		938A1EC321F3B19700AC94EE /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB221F3B19500AC94EE /* NibView.swift */; };
+		938A1EC421F3B19700AC94EE /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB321F3B19500AC94EE /* SwipeableView.swift */; };
+		938A1EC521F3B19700AC94EE /* StaticShadowHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938A1EB421F3B19500AC94EE /* StaticShadowHeaderView.xib */; };
+		938A1EC621F3B19700AC94EE /* SwipeableCardViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB521F3B19600AC94EE /* SwipeableCardViewCard.swift */; };
+		938A1EC721F3B19700AC94EE /* SwipeableCardViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB621F3B19600AC94EE /* SwipeableCardViewContainer.swift */; };
+		938A1EC821F3B19700AC94EE /* CGPoint+SwipeableAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB721F3B19600AC94EE /* CGPoint+SwipeableAdditions.swift */; };
+		938A1EC921F3B19700AC94EE /* SampleSwipeableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB821F3B19600AC94EE /* SampleSwipeableCellViewModel.swift */; };
+		938A1ECA21F3B19700AC94EE /* SwipeableCardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EB921F3B19700AC94EE /* SwipeableCardViewDelegate.swift */; };
+		938A1ECC21F3B6CE00AC94EE /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1ECB21F3B6CE00AC94EE /* UIImageView+Download.swift */; };
+		938A1ECF21F3B80C00AC94EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1ECE21F3B80C00AC94EE /* Config.swift */; };
+		938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */; };
+		938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */; };
+		938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30E025BF75CA3A910073E8AF /* Pods-Zooper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zooper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4D6938AF4C307149068734D8 /* Pods-Zooper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zooper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zooper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932D091021F39E5B00BD2450 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		932D091221F39E6200BD2450 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		932D091421F39EAB00BD2450 /* posts.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = posts.graphql; sourceTree = "<group>"; };
+		932D091721F3A34300BD2450 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = "Zooper-iOS/PostModel.swift"; sourceTree = "<group>"; };
+		932D091A21F3A4E900BD2450 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		932D091C21F3A70F00BD2450 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		933ED35221F39C54002EB839 /* Zooper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zooper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED35521F39C54002EB839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		933ED35721F39C54002EB839 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		933ED35D21F39C54002EB839 /* Zooper_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zooper_iOS.xcdatamodel; sourceTree = "<group>"; };
+		933ED35F21F39C56002EB839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		933ED36221F39C56002EB839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		933ED36421F39C56002EB839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9355393021F3E0D9008C7694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		938A1EA921F3B19200AC94EE /* SampleSwipeableCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleSwipeableCard.swift; sourceTree = "<group>"; };
+		938A1EAA21F3B19300AC94EE /* SwipeableCardViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDataSource.swift; sourceTree = "<group>"; };
+		938A1EAB21F3B19300AC94EE /* SwipeableCardViewCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableCardViewCard.xib; sourceTree = "<group>"; };
+		938A1EAC21F3B19300AC94EE /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		938A1EAD21F3B19300AC94EE /* SampleSwipeableCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleSwipeableCard.xib; sourceTree = "<group>"; };
+		938A1EAE21F3B19400AC94EE /* CGRect+SwipeAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+SwipeAdditions.swift"; sourceTree = "<group>"; };
+		938A1EAF21F3B19400AC94EE /* SwipeableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableViewDelegate.swift; sourceTree = "<group>"; };
+		938A1EB021F3B19400AC94EE /* SwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDirection.swift; sourceTree = "<group>"; };
+		938A1EB121F3B19400AC94EE /* StaticShadowHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticShadowHeaderView.swift; sourceTree = "<group>"; };
+		938A1EB221F3B19500AC94EE /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		938A1EB321F3B19500AC94EE /* SwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
+		938A1EB421F3B19500AC94EE /* StaticShadowHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaticShadowHeaderView.xib; sourceTree = "<group>"; };
+		938A1EB521F3B19600AC94EE /* SwipeableCardViewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewCard.swift; sourceTree = "<group>"; };
+		938A1EB621F3B19600AC94EE /* SwipeableCardViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewContainer.swift; sourceTree = "<group>"; };
+		938A1EB721F3B19600AC94EE /* CGPoint+SwipeableAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwipeableAdditions.swift"; sourceTree = "<group>"; };
+		938A1EB821F3B19600AC94EE /* SampleSwipeableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleSwipeableCellViewModel.swift; sourceTree = "<group>"; };
+		938A1EB921F3B19700AC94EE /* SwipeableCardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDelegate.swift; sourceTree = "<group>"; };
+		938A1ECB21F3B6CE00AC94EE /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		938A1ECE21F3B80C00AC94EE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		933ED34F21F39C54002EB839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8608CD65E6C6F9C63B0D69CF /* Pods_Zooper_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5800B4DAEA61FE34EA6A631C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F8E2E9DE6DFBC52389D18B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D6938AF4C307149068734D8 /* Pods-Zooper-iOS.debug.xcconfig */,
+				30E025BF75CA3A910073E8AF /* Pods-Zooper-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		932D091621F3A2EE00BD2450 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				932D091421F39EAB00BD2450 /* posts.graphql */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		932D091921F3A38D00BD2450 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				932D091721F3A34300BD2450 /* PostModel.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		933ED34921F39C54002EB839 = {
+			isa = PBXGroup;
+			children = (
+				933ED35421F39C54002EB839 /* Zooper-iOS */,
+				933ED35321F39C54002EB839 /* Products */,
+				8F8E2E9DE6DFBC52389D18B0 /* Pods */,
+				5800B4DAEA61FE34EA6A631C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		933ED35321F39C54002EB839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				933ED35221F39C54002EB839 /* Zooper-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		933ED35421F39C54002EB839 /* Zooper-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				938A1ECE21F3B80C00AC94EE /* Config.swift */,
+				932D091021F39E5B00BD2450 /* API.swift */,
+				932D091A21F3A4E900BD2450 /* Apollo.swift */,
+				933ED35521F39C54002EB839 /* AppDelegate.swift */,
+				933ED35721F39C54002EB839 /* HomeViewController.swift */,
+				932D091C21F3A70F00BD2450 /* Main.storyboard */,
+				933ED35F21F39C56002EB839 /* Assets.xcassets */,
+				933ED36121F39C56002EB839 /* LaunchScreen.storyboard */,
+				933ED36421F39C56002EB839 /* Info.plist */,
+				933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */,
+				932D091221F39E6200BD2450 /* schema.json */,
+				938A1EA821F3B18700AC94EE /* Swipe */,
+				932D091921F3A38D00BD2450 /* Models */,
+				932D091621F3A2EE00BD2450 /* Queries */,
+				938A1ED021F3C3BF00AC94EE /* Resources */,
+				938A1ECD21F3B70900AC94EE /* Extensions */,
+			);
+			path = "Zooper-iOS";
+			sourceTree = "<group>";
+		};
+		938A1EA821F3B18700AC94EE /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				938A1EB221F3B19500AC94EE /* NibView.swift */,
+				938A1EA921F3B19200AC94EE /* SampleSwipeableCard.swift */,
+				938A1EAD21F3B19300AC94EE /* SampleSwipeableCard.xib */,
+				938A1EB821F3B19600AC94EE /* SampleSwipeableCellViewModel.swift */,
+				938A1EB121F3B19400AC94EE /* StaticShadowHeaderView.swift */,
+				938A1EB421F3B19500AC94EE /* StaticShadowHeaderView.xib */,
+				938A1EB521F3B19600AC94EE /* SwipeableCardViewCard.swift */,
+				938A1EAB21F3B19300AC94EE /* SwipeableCardViewCard.xib */,
+				938A1EB621F3B19600AC94EE /* SwipeableCardViewContainer.swift */,
+				938A1EAA21F3B19300AC94EE /* SwipeableCardViewDataSource.swift */,
+				938A1EB921F3B19700AC94EE /* SwipeableCardViewDelegate.swift */,
+				938A1EB321F3B19500AC94EE /* SwipeableView.swift */,
+				938A1EAF21F3B19400AC94EE /* SwipeableViewDelegate.swift */,
+				938A1EB021F3B19400AC94EE /* SwipeDirection.swift */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+		938A1ECD21F3B70900AC94EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				938A1EB721F3B19600AC94EE /* CGPoint+SwipeableAdditions.swift */,
+				938A1EAE21F3B19400AC94EE /* CGRect+SwipeAdditions.swift */,
+				938A1EAC21F3B19300AC94EE /* UIView+Constraints.swift */,
+				938A1ECB21F3B6CE00AC94EE /* UIImageView+Download.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		938A1ED021F3C3BF00AC94EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9355393021F3E0D9008C7694 /* Colors.swift */,
+				938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */,
+				938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */,
+				938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		933ED35121F39C54002EB839 /* Zooper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED36721F39C56002EB839 /* Build configuration list for PBXNativeTarget "Zooper-iOS" */;
+			buildPhases = (
+				D86FCF3586E14C19228D15A2 /* [CP] Check Pods Manifest.lock */,
+				933ED36A21F39D63002EB839 /* Generate Apollo GraphQL API */,
+				933ED34E21F39C54002EB839 /* Sources */,
+				933ED34F21F39C54002EB839 /* Frameworks */,
+				933ED35021F39C54002EB839 /* Resources */,
+				C5E7329AA41982B14C2D2806 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zooper-iOS";
+			productName = "Zooper-iOS";
+			productReference = 933ED35221F39C54002EB839 /* Zooper-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		933ED34A21F39C54002EB839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Austin Evans";
+				TargetAttributes = {
+					933ED35121F39C54002EB839 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 933ED34D21F39C54002EB839 /* Build configuration list for PBXProject "Zooper-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 933ED34921F39C54002EB839;
+			productRefGroup = 933ED35321F39C54002EB839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				933ED35121F39C54002EB839 /* Zooper-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		933ED35021F39C54002EB839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938A1EBE21F3B19700AC94EE /* SampleSwipeableCard.xib in Resources */,
+				932D091321F39E6200BD2450 /* schema.json in Resources */,
+				933ED36321F39C56002EB839 /* LaunchScreen.storyboard in Resources */,
+				933ED36021F39C56002EB839 /* Assets.xcassets in Resources */,
+				938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */,
+				938A1EC521F3B19700AC94EE /* StaticShadowHeaderView.xib in Resources */,
+				938A1EBC21F3B19700AC94EE /* SwipeableCardViewCard.xib in Resources */,
+				932D091D21F3A70F00BD2450 /* Main.storyboard in Resources */,
+				932D091521F39EAB00BD2450 /* posts.graphql in Resources */,
+				938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */,
+				938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		933ED36A21F39D63002EB839 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+		};
+		C5E7329AA41982B14C2D2806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86FCF3586E14C19228D15A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zooper-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		933ED34E21F39C54002EB839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938A1EC121F3B19700AC94EE /* SwipeDirection.swift in Sources */,
+				938A1EC621F3B19700AC94EE /* SwipeableCardViewCard.swift in Sources */,
+				938A1EBB21F3B19700AC94EE /* SwipeableCardViewDataSource.swift in Sources */,
+				933ED35821F39C54002EB839 /* HomeViewController.swift in Sources */,
+				938A1EC821F3B19700AC94EE /* CGPoint+SwipeableAdditions.swift in Sources */,
+				932D091821F3A34300BD2450 /* PostModel.swift in Sources */,
+				938A1ECA21F3B19700AC94EE /* SwipeableCardViewDelegate.swift in Sources */,
+				938A1EBD21F3B19700AC94EE /* UIView+Constraints.swift in Sources */,
+				933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */,
+				938A1EC321F3B19700AC94EE /* NibView.swift in Sources */,
+				938A1EC421F3B19700AC94EE /* SwipeableView.swift in Sources */,
+				932D091121F39E5C00BD2450 /* API.swift in Sources */,
+				938A1ECC21F3B6CE00AC94EE /* UIImageView+Download.swift in Sources */,
+				9355393121F3E0D9008C7694 /* Colors.swift in Sources */,
+				938A1EC921F3B19700AC94EE /* SampleSwipeableCellViewModel.swift in Sources */,
+				932D091B21F3A4E900BD2450 /* Apollo.swift in Sources */,
+				938A1ECF21F3B80C00AC94EE /* Config.swift in Sources */,
+				933ED35E21F39C54002EB839 /* Zooper_iOS.xcdatamodeld in Sources */,
+				938A1EC221F3B19700AC94EE /* StaticShadowHeaderView.swift in Sources */,
+				938A1EC021F3B19700AC94EE /* SwipeableViewDelegate.swift in Sources */,
+				938A1EBF21F3B19700AC94EE /* CGRect+SwipeAdditions.swift in Sources */,
+				938A1EBA21F3B19700AC94EE /* SampleSwipeableCard.swift in Sources */,
+				938A1EC721F3B19700AC94EE /* SwipeableCardViewContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		933ED36121F39C56002EB839 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				933ED36221F39C56002EB839 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		933ED36521F39C56002EB839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		933ED36621F39C56002EB839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		933ED36821F39C56002EB839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6938AF4C307149068734D8 /* Pods-Zooper-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML89Z5TSJK;
+				INFOPLIST_FILE = "Zooper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ajevans.Zooper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		933ED36921F39C56002EB839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E025BF75CA3A910073E8AF /* Pods-Zooper-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML89Z5TSJK;
+				INFOPLIST_FILE = "Zooper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ajevans.Zooper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		933ED34D21F39C54002EB839 /* Build configuration list for PBXProject "Zooper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED36521F39C56002EB839 /* Debug */,
+				933ED36621F39C56002EB839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED36721F39C56002EB839 /* Build configuration list for PBXNativeTarget "Zooper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED36821F39C56002EB839 /* Debug */,
+				933ED36921F39C56002EB839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				933ED35D21F39C54002EB839 /* Zooper_iOS.xcdatamodel */,
+			);
+			currentVersion = 933ED35D21F39C54002EB839 /* Zooper_iOS.xcdatamodel */;
+			path = Zooper_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 933ED34A21F39C54002EB839 /* Project object */;
+}
