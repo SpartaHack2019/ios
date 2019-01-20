@@ -108,19 +108,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is the Account Page!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3U9-MT-TTA">
-                                <rect key="frame" x="5" y="25" width="365" height="588"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OrG-np-l3M">
+                                <rect key="frame" x="0.0" y="262" width="375" height="356"/>
+                                <color key="backgroundColor" red="0.3200932567" green="0.94064366089999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OrG-np-l3M" secondAttribute="height" multiplier="375:356" id="K0h-14-Ogl"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qOv-eR-vwg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="heM-02-wu8">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Austin Evans" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z3I-RN-UXn">
+                                <rect key="frame" x="16" y="20" width="66" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="AustinJEvans@me.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mQr-FZ-eWm">
+                                <rect key="frame" x="16" y="223" width="343" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ae" translatesAutoresizingMaskIntoConstraints="NO" id="ymu-Xd-zuY">
+                                <rect key="frame" x="16" y="78" width="127" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_pets_24px" translatesAutoresizingMaskIntoConstraints="NO" id="ydl-2S-7Kd">
+                                <rect key="frame" x="232" y="78" width="127" height="128"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="$0" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OrJ-wu-mI6">
+                                <rect key="frame" x="260" y="144" width="71" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT9-Pb-9nH">
+                                <rect key="frame" x="232" y="214" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Cashout">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Balance" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-hq-l9F">
+                                <rect key="frame" x="232" y="20" width="127" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3U9-MT-TTA" firstAttribute="top" secondItem="hoU-S0-BBd" secondAttribute="top" constant="5" id="Fsf-EU-yTl"/>
-                            <constraint firstItem="hoU-S0-BBd" firstAttribute="bottom" secondItem="3U9-MT-TTA" secondAttribute="bottom" constant="5" id="ROA-MV-1dZ"/>
-                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="3U9-MT-TTA" secondAttribute="trailing" constant="5" id="YCt-R9-plh"/>
-                            <constraint firstItem="3U9-MT-TTA" firstAttribute="leading" secondItem="hoU-S0-BBd" secondAttribute="leading" constant="5" id="jlx-jm-XXD"/>
+                            <constraint firstItem="Z3I-RN-UXn" firstAttribute="top" secondItem="hoU-S0-BBd" secondAttribute="top" id="2Lh-l1-Pow"/>
+                            <constraint firstItem="mQr-FZ-eWm" firstAttribute="top" secondItem="ymu-Xd-zuY" secondAttribute="bottom" constant="17" id="62z-Bh-u5c"/>
+                            <constraint firstItem="yhj-hq-l9F" firstAttribute="leading" secondItem="Z3I-RN-UXn" secondAttribute="trailing" constant="150" id="BzI-YU-Hm0"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="ymu-Xd-zuY" secondAttribute="trailing" constant="232" id="DNJ-bt-VNu"/>
+                            <constraint firstItem="OrJ-wu-mI6" firstAttribute="leading" secondItem="ymu-Xd-zuY" secondAttribute="trailing" constant="117" id="Ewl-lP-JXn"/>
+                            <constraint firstItem="yhj-hq-l9F" firstAttribute="top" secondItem="hoU-S0-BBd" secondAttribute="top" id="Fxc-2t-JRP"/>
+                            <constraint firstItem="Z3I-RN-UXn" firstAttribute="leading" secondItem="hoU-S0-BBd" secondAttribute="leading" constant="16" id="IvI-JE-9tL"/>
+                            <constraint firstItem="OrG-np-l3M" firstAttribute="leading" secondItem="hoU-S0-BBd" secondAttribute="leading" id="KOg-QL-ug7"/>
+                            <constraint firstItem="ymu-Xd-zuY" firstAttribute="top" secondItem="Z3I-RN-UXn" secondAttribute="bottom" constant="8" id="NZO-l7-cMh"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="bottom" secondItem="OrG-np-l3M" secondAttribute="bottom" id="OXo-G9-KxY"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="ydl-2S-7Kd" secondAttribute="trailing" constant="16" id="PLz-G9-hsx"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="mQr-FZ-eWm" secondAttribute="trailing" constant="16" id="Pnj-qa-DQP"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="OrG-np-l3M" secondAttribute="trailing" id="UiR-tB-ATK"/>
+                            <constraint firstItem="ymu-Xd-zuY" firstAttribute="leading" secondItem="hoU-S0-BBd" secondAttribute="leading" constant="16" id="V4p-tE-Eqq"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="OrJ-wu-mI6" secondAttribute="trailing" constant="44" id="dnP-f1-68i"/>
+                            <constraint firstItem="ydl-2S-7Kd" firstAttribute="leading" secondItem="ymu-Xd-zuY" secondAttribute="trailing" constant="89" id="gNB-32-LoD"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="trailing" secondItem="yhj-hq-l9F" secondAttribute="trailing" constant="16" id="jgD-0h-wyB"/>
+                            <constraint firstItem="mQr-FZ-eWm" firstAttribute="top" secondItem="OrJ-wu-mI6" secondAttribute="bottom" constant="29" id="omi-C1-Kxe"/>
+                            <constraint firstItem="hoU-S0-BBd" firstAttribute="bottom" secondItem="OrG-np-l3M" secondAttribute="bottom" id="s8T-G6-rtP"/>
+                            <constraint firstItem="ydl-2S-7Kd" firstAttribute="top" secondItem="yhj-hq-l9F" secondAttribute="bottom" constant="8" id="u1q-aO-hty"/>
+                            <constraint firstItem="mQr-FZ-eWm" firstAttribute="top" secondItem="ydl-2S-7Kd" secondAttribute="bottom" constant="17" id="vGH-K5-pWA"/>
+                            <constraint firstItem="mQr-FZ-eWm" firstAttribute="leading" secondItem="hoU-S0-BBd" secondAttribute="leading" constant="16" id="z6r-O4-aOF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hoU-S0-BBd"/>
                     </view>
@@ -128,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bC-rA-K0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="538" y="-840"/>
+            <point key="canvasLocation" x="536.79999999999995" y="-840.62968515742136"/>
         </scene>
         <!--Main-->
         <scene sceneID="NXm-9N-fuM">
@@ -402,7 +475,9 @@
     </scenes>
     <resources>
         <image name="Heart" width="654" height="654"/>
+        <image name="ae" width="321" height="321"/>
         <image name="home" width="30" height="30"/>
+        <image name="ic_pets_24px" width="100.66666412353516" height="95.666664123535156"/>
         <image name="upload" width="30" height="30"/>
         <image name="user_group_man_woman" width="30" height="30"/>
     </resources>
