@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, SwipeableCardViewDataSource {
 
     @IBOutlet weak var swipeableCardView: SwipeableCardViewContainer!
 
+    @IBOutlet weak var love: UIImageView!
     var postsData = [PostModel]()
 
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class HomeViewController: UIViewController, SwipeableCardViewDataSource {
         loadPosts()
 
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Comfortaa", size: 30)!]
+        scheduledTimerWithTimeInterval()
     }
 
     func loadPosts() {
@@ -36,7 +38,28 @@ class HomeViewController: UIViewController, SwipeableCardViewDataSource {
             self.swipeableCardView.reloadData()
         }
     }
+    var timer = Timer()
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+        timer =  Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { (timer) in
+            self.updateCounting()
+        }
+    }
+    var count = 0;
+    func updateCounting(){
+        love.isHidden = lovedit.lover
+        if(!lovedit.lover && count >= 1){
+            lovedit.lover = true
+            count = 0
+        }
+        else if(!lovedit.lover){
+            count += 1
+        }
+    }
 
+}
+struct lovedit {
+    static var lover = true
 }
 
 extension HomeViewController {
@@ -57,6 +80,7 @@ extension HomeViewController {
                                                      image: image!)
         let cardView = SampleSwipeableCard()
         cardView.viewModel = viewModel
+    
         return cardView
     }
 

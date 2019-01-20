@@ -16,7 +16,7 @@ class SampleSwipeableCard: SwipeableCardViewCard {
     @IBOutlet private weak var imageView: FLAnimatedImageView!
     @IBOutlet private weak var backgroundContainerView: UIView!
     @IBOutlet private weak var adoptionView: UIView!
-
+    
     private var adoptionURL: URL? {
         didSet {
             if adoptionURL != nil {

@@ -27,10 +27,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-I9-nNl" userLabel="Swipeable Card View" customClass="SwipeableCardViewContainer" customModule="Zooper_iOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="52" width="343" height="514.5"/>
+                                <rect key="frame" x="-8" y="16" width="391" height="586"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="lfR-ae-hOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="391" height="586"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="lfR-ae-hOD" firstAttribute="leading" secondItem="FYT-I9-nNl" secondAttribute="leading" id="7vl-UH-se8"/>
+                                    <constraint firstAttribute="trailing" secondItem="lfR-ae-hOD" secondAttribute="trailing" id="Yir-kQ-ZWW"/>
+                                    <constraint firstItem="lfR-ae-hOD" firstAttribute="top" secondItem="FYT-I9-nNl" secondAttribute="top" id="cEs-Fy-s9W"/>
                                     <constraint firstAttribute="width" secondItem="FYT-I9-nNl" secondAttribute="height" multiplier="2:3" id="w2f-Lv-7bY"/>
+                                    <constraint firstAttribute="bottom" secondItem="lfR-ae-hOD" secondAttribute="bottom" id="wIP-qi-YDA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -55,6 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Zooper" largeTitleDisplayMode="always" id="I4l-EX-fVI"/>
                     <connections>
+                        <outlet property="love" destination="lfR-ae-hOD" id="lRr-hj-Xdl"/>
                         <outlet property="swipeableCardView" destination="FYT-I9-nNl" id="OuW-jj-ihb"/>
                     </connections>
                 </viewController>
@@ -194,7 +204,7 @@
                                                         <fragment content="Choose Photo">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.011764705882352941" green="0.3411764705882353" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" size="22" name="Comfortaa-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="22"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -337,6 +347,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Heart" width="654" height="654"/>
         <image name="home" width="30" height="30"/>
         <image name="upload" width="30" height="30"/>
         <image name="user_group_man_woman" width="30" height="30"/>

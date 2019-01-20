@@ -19,9 +19,7 @@
 		933ED35E21F39C54002EB839 /* Zooper_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */; };
 		933ED36021F39C56002EB839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933ED35F21F39C56002EB839 /* Assets.xcassets */; };
 		933ED36321F39C56002EB839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933ED36121F39C56002EB839 /* LaunchScreen.storyboard */; };
-		9355393321F3E212008C7694 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355393221F3E212008C7694 /* GradientView.swift */; };
 		9355393521F3E29D008C7694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355393421F3E29D008C7694 /* Colors.swift */; };
-		9355393721F3E7B2008C7694 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355393621F3E7B2008C7694 /* PostViewController.swift */; };
 		938A1EBA21F3B19700AC94EE /* SampleSwipeableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EA921F3B19200AC94EE /* SampleSwipeableCard.swift */; };
 		938A1EBB21F3B19700AC94EE /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A1EAA21F3B19300AC94EE /* SwipeableCardViewDataSource.swift */; };
 		938A1EBC21F3B19700AC94EE /* SwipeableCardViewCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938A1EAB21F3B19300AC94EE /* SwipeableCardViewCard.xib */; };
@@ -44,6 +42,8 @@
 		938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */; };
 		938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */; };
 		938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */; };
+		A4BFEC2921F40AF600BFAC85 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFEC2821F40AF600BFAC85 /* PostViewController.swift */; };
+		A4BFEC2B21F40B1E00BFAC85 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +63,7 @@
 		933ED35F21F39C56002EB839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		933ED36221F39C56002EB839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933ED36421F39C56002EB839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9355393221F3E212008C7694 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = "/Users/austinjevans/Desktop/Zooper-iOS/Zooper-iOS/Extensions/GradientView.swift"; sourceTree = "<absolute>"; };
 		9355393421F3E29D008C7694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		9355393621F3E7B2008C7694 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = "/Users/austinjevans/Desktop/Zooper-iOS/Zooper-iOS/PostViewController.swift"; sourceTree = "<absolute>"; };
 		938A1EA921F3B19200AC94EE /* SampleSwipeableCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleSwipeableCard.swift; sourceTree = "<group>"; };
 		938A1EAA21F3B19300AC94EE /* SwipeableCardViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDataSource.swift; sourceTree = "<group>"; };
 		938A1EAB21F3B19300AC94EE /* SwipeableCardViewCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableCardViewCard.xib; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		A4BFEC2821F40AF600BFAC85 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 				932D091A21F3A4E900BD2450 /* Apollo.swift */,
 				933ED35521F39C54002EB839 /* AppDelegate.swift */,
 				933ED35721F39C54002EB839 /* HomeViewController.swift */,
-				9355393621F3E7B2008C7694 /* PostViewController.swift */,
+				A4BFEC2821F40AF600BFAC85 /* PostViewController.swift */,
 				932D091C21F3A70F00BD2450 /* Main.storyboard */,
 				933ED35F21F39C56002EB839 /* Assets.xcassets */,
 				933ED36121F39C56002EB839 /* LaunchScreen.storyboard */,
@@ -202,7 +202,7 @@
 		938A1ECD21F3B70900AC94EE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9355393221F3E212008C7694 /* GradientView.swift */,
+				A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */,
 				938A1EB721F3B19600AC94EE /* CGPoint+SwipeableAdditions.swift */,
 				938A1EAE21F3B19400AC94EE /* CGRect+SwipeAdditions.swift */,
 				938A1EAC21F3B19300AC94EE /* UIView+Constraints.swift */,
@@ -377,20 +377,20 @@
 			files = (
 				938A1EC121F3B19700AC94EE /* SwipeDirection.swift in Sources */,
 				9355393521F3E29D008C7694 /* Colors.swift in Sources */,
-				9355393321F3E212008C7694 /* GradientView.swift in Sources */,
 				938A1EC621F3B19700AC94EE /* SwipeableCardViewCard.swift in Sources */,
-				9355393721F3E7B2008C7694 /* PostViewController.swift in Sources */,
 				938A1EBB21F3B19700AC94EE /* SwipeableCardViewDataSource.swift in Sources */,
 				933ED35821F39C54002EB839 /* HomeViewController.swift in Sources */,
 				938A1EC821F3B19700AC94EE /* CGPoint+SwipeableAdditions.swift in Sources */,
 				932D091821F3A34300BD2450 /* PostModel.swift in Sources */,
 				938A1ECA21F3B19700AC94EE /* SwipeableCardViewDelegate.swift in Sources */,
 				938A1EBD21F3B19700AC94EE /* UIView+Constraints.swift in Sources */,
+				A4BFEC2B21F40B1E00BFAC85 /* GradientView.swift in Sources */,
 				933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */,
 				938A1EC321F3B19700AC94EE /* NibView.swift in Sources */,
 				938A1EC421F3B19700AC94EE /* SwipeableView.swift in Sources */,
 				932D091121F39E5C00BD2450 /* API.swift in Sources */,
 				938A1ECC21F3B6CE00AC94EE /* UIImageView+Download.swift in Sources */,
+				A4BFEC2921F40AF600BFAC85 /* PostViewController.swift in Sources */,
 				938A1EC921F3B19700AC94EE /* SampleSwipeableCellViewModel.swift in Sources */,
 				932D091B21F3A4E900BD2450 /* Apollo.swift in Sources */,
 				938A1ECF21F3B80C00AC94EE /* Config.swift in Sources */,

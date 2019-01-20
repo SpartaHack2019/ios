@@ -122,7 +122,7 @@ class SwipeableView: UIView {
 
     private var dragPercentage: CGFloat {
         guard let dragDirection = dragDirection else { return 0.0 }
-
+ 
         let normalizedDragPoint = panGestureTranslation.normalizedDistanceForSize(frame.size)
         let swipePoint = normalizedDragPoint.scalarProjectionPointWith(dragDirection.point)
 
@@ -141,8 +141,12 @@ class SwipeableView: UIView {
         }
     }
 
+    @IBOutlet weak var love: UITextView!
     private func endedPanAnimation() {
         if let dragDirection = dragDirection, dragPercentage >= SwipeableView.swipePercentageMargin {
+            if(dragDirection == SwipeDirection.right || dragDirection == SwipeDirection.topRight || dragDirection == SwipeDirection.bottomRight){
+                lovedit.lover = false
+            }
             let translationAnimation = POPBasicAnimation(propertyNamed: kPOPLayerTranslationXY)
             translationAnimation?.duration = SwipeableView.finalizeSwipeActionAnimationDuration
             translationAnimation?.fromValue = NSValue(cgPoint: POPLayerGetTranslationXY(layer))
