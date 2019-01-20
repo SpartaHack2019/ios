@@ -44,7 +44,6 @@
 		938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */; };
 		938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */; };
 		938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */; };
-		A4BFEC2721F4002100BFAC85 /* Colored_Bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BFEC2621F4002100BFAC85 /* Colored_Bullseye.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +88,6 @@
 		938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
-		A4BFEC2621F4002100BFAC85 /* Colored_Bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Colored_Bullseye.png; path = ../../../../Downloads/Colored_Bullseye.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,6 @@
 				933ED35721F39C54002EB839 /* HomeViewController.swift */,
 				9355393621F3E7B2008C7694 /* PostViewController.swift */,
 				932D091C21F3A70F00BD2450 /* Main.storyboard */,
-				A4BFEC2621F4002100BFAC85 /* Colored_Bullseye.png */,
 				933ED35F21F39C56002EB839 /* Assets.xcassets */,
 				933ED36121F39C56002EB839 /* LaunchScreen.storyboard */,
 				933ED36421F39C56002EB839 /* Info.plist */,
@@ -289,7 +286,6 @@
 				938A1EBE21F3B19700AC94EE /* SampleSwipeableCard.xib in Resources */,
 				932D091321F39E6200BD2450 /* schema.json in Resources */,
 				933ED36321F39C56002EB839 /* LaunchScreen.storyboard in Resources */,
-				A4BFEC2721F4002100BFAC85 /* Colored_Bullseye.png in Resources */,
 				933ED36021F39C56002EB839 /* Assets.xcassets in Resources */,
 				938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */,
 				938A1EC521F3B19700AC94EE /* StaticShadowHeaderView.xib in Resources */,

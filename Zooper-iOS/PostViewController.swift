@@ -35,6 +35,6 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        //
+        performSegue(withIdentifier: "SubmissionFormIdentifier", sender: nil)
     }
 }

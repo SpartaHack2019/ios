@@ -163,7 +163,7 @@
                                                     <color key="titleColor" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="photoLibraryTapped:" destination="bdd-qt-O95" eventType="touchUpInside" id="3aq-KB-eFV"/>
+                                                    <action selector="cameraTapped:" destination="bdd-qt-O95" eventType="touchUpInside" id="BxL-yE-96G"/>
                                                 </connections>
                                             </button>
                                         </subviews>
