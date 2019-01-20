@@ -193,7 +193,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Choose Photo">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.011764705882352941" green="0.3411764705882353" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="NSColor" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="22" name="Comfortaa-Regular"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
@@ -258,42 +258,91 @@
             </objects>
             <point key="canvasLocation" x="2311" y="-573"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Submit View Controller-->
         <scene sceneID="Iwz-x0-cVD">
             <objects>
-                <viewController id="bRx-7U-SSF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b4v-xT-K9O">
+                <viewController id="bRx-7U-SSF" customClass="PostSubmitViewController" customModule="Zooper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4v-xT-K9O" customClass="GradientView" customModule="Zooper_iOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-3e-qFA">
-                                <rect key="frame" x="122" y="508" width="120" height="51"/>
-                                <color key="backgroundColor" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
-                                <state key="normal" title="Post">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUZ-0x-7LD" customClass="SwipeableCardViewContainer" customModule="Zooper_iOS" customModuleProvider="target">
-                                <rect key="frame" x="62" y="145" width="240" height="360"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-NW-sA9" customClass="RoundUIView" customModule="Zooper_iOS" customModuleProvider="target">
+                                <rect key="frame" x="32" y="100.5" width="311" height="466.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ley-su-3Jp">
+                                        <rect key="frame" x="18" y="16" width="275" height="275"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ley-su-3Jp" secondAttribute="height" multiplier="1:1" id="IAE-zu-unr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="Tell us about your furry friend" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t9q-pH-Ddx">
+                                        <rect key="frame" x="18" y="299" width="275" height="129"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="129" id="tJV-hp-v97"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-3e-qFA">
+                                        <rect key="frame" x="118" y="419.5" width="75" height="31"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="tLU-0y-l9n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <state key="normal" title="Post">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TUZ-0x-7LD" secondAttribute="height" multiplier="2:3" id="Qzx-PX-Nl6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ley-su-3Jp" secondAttribute="trailing" constant="18" id="9DW-5u-Syb"/>
+                                    <constraint firstItem="qfS-3e-qFA" firstAttribute="centerX" secondItem="Bd1-NW-sA9" secondAttribute="centerX" id="Dmj-Ho-rhh"/>
+                                    <constraint firstItem="Ley-su-3Jp" firstAttribute="top" secondItem="Bd1-NW-sA9" secondAttribute="top" constant="16" id="KdN-uo-k06"/>
+                                    <constraint firstItem="t9q-pH-Ddx" firstAttribute="top" secondItem="Ley-su-3Jp" secondAttribute="bottom" constant="8" id="UnQ-sv-fPc"/>
+                                    <constraint firstItem="t9q-pH-Ddx" firstAttribute="leading" secondItem="Bd1-NW-sA9" secondAttribute="leading" constant="18" id="VQf-ah-HHD"/>
+                                    <constraint firstAttribute="width" secondItem="Bd1-NW-sA9" secondAttribute="height" multiplier="2:3" id="m4p-MM-etv"/>
+                                    <constraint firstItem="Ley-su-3Jp" firstAttribute="leading" secondItem="Bd1-NW-sA9" secondAttribute="leading" constant="18" id="mW8-bS-zeI"/>
+                                    <constraint firstAttribute="trailing" secondItem="t9q-pH-Ddx" secondAttribute="trailing" constant="18" id="qhL-Kf-WBH"/>
+                                    <constraint firstAttribute="bottom" secondItem="qfS-3e-qFA" secondAttribute="bottom" constant="16" id="v8Z-br-dhG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="TUZ-0x-7LD" firstAttribute="leading" secondItem="Mu3-n8-Br4" secondAttribute="leading" constant="62" id="38W-XZ-pjd"/>
-                            <constraint firstItem="TUZ-0x-7LD" firstAttribute="centerX" secondItem="qfS-3e-qFA" secondAttribute="centerX" id="Bp3-Rc-7Al"/>
-                            <constraint firstItem="qfS-3e-qFA" firstAttribute="top" secondItem="TUZ-0x-7LD" secondAttribute="bottom" constant="67" id="F15-TN-Meb"/>
-                            <constraint firstItem="TUZ-0x-7LD" firstAttribute="top" secondItem="Mu3-n8-Br4" secondAttribute="top" constant="81" id="MMh-bI-6tw"/>
-                            <constraint firstItem="Mu3-n8-Br4" firstAttribute="trailing" secondItem="TUZ-0x-7LD" secondAttribute="trailing" constant="73" id="cDq-7f-KMp"/>
+                            <constraint firstItem="Mu3-n8-Br4" firstAttribute="trailing" secondItem="Bd1-NW-sA9" secondAttribute="trailing" constant="32" id="0zX-Et-Upr"/>
+                            <constraint firstItem="Bd1-NW-sA9" firstAttribute="leading" secondItem="Mu3-n8-Br4" secondAttribute="leading" constant="32" id="GlR-8q-6b8"/>
+                            <constraint firstItem="Bd1-NW-sA9" firstAttribute="top" secondItem="Mu3-n8-Br4" secondAttribute="top" constant="36.5" id="Xqq-n9-Cfa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mu3-n8-Br4"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NrP-gY-nL0" appends="YES" id="b2r-7J-ozu"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="cardToTopContraint" destination="Xqq-n9-Cfa" id="D6x-U7-zeL"/>
+                        <outlet property="descriptionTextView" destination="t9q-pH-Ddx" id="F2t-gW-XO1"/>
+                        <outlet property="imageView" destination="Ley-su-3Jp" id="P97-Ek-KOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaQ-vZ-qrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NrP-gY-nL0">
+                    <connections>
+                        <action selector="handleTap:" destination="bRx-7U-SSF" id="Lq5-IM-NSv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3240.8000000000002" y="-573.46326836581716"/>
         </scene>
