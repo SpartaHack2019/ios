@@ -34,6 +34,9 @@ class PostSubmitViewController: UIViewController, UITextViewDelegate, UIGestureR
     @IBAction func handleTap(_ sender: Any) {
         descriptionTextView.resignFirstResponder()
     }
+    @IBAction func postButtonPressed(_ sender: Any) {
+        tabBarController?.selectedIndex = 2
+    }
 
     func textViewDidBeginEditing(_ textView: UITextView) {
         if descriptionTextView.textColor == UIColor.lightGray {

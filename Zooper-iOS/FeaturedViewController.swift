@@ -6,4 +6,11 @@
 //  Copyright © 2019 Austin Evans. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FeaturedViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}

@@ -6,4 +6,8 @@
 //  Copyright © 2019 Austin Evans. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PostCell: UICollectionViewCell {
+    
+}

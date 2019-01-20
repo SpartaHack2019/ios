@@ -10,11 +10,14 @@
 		8608CD65E6C6F9C63B0D69CF /* Pods_Zooper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */; };
 		932D091121F39E5C00BD2450 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091021F39E5B00BD2450 /* API.swift */; };
 		932D091321F39E6200BD2450 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 932D091221F39E6200BD2450 /* schema.json */; };
-		932D091521F39EAB00BD2450 /* posts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 932D091421F39EAB00BD2450 /* posts.graphql */; };
+		932D091521F39EAB00BD2450 /* Posts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 932D091421F39EAB00BD2450 /* Posts.graphql */; };
 		932D091821F3A34300BD2450 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091721F3A34300BD2450 /* PostModel.swift */; };
 		932D091B21F3A4E900BD2450 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091A21F3A4E900BD2450 /* Apollo.swift */; };
 		932D091D21F3A70F00BD2450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932D091C21F3A70F00BD2450 /* Main.storyboard */; };
 		9338103221F40F2E00AF3CA4 /* PostSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338103121F40F2E00AF3CA4 /* PostSubmitViewController.swift */; };
+		9338103621F43A6700AF3CA4 /* PostCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9338103521F43A6700AF3CA4 /* PostCellView.xib */; };
+		9338103821F43A8500AF3CA4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338103721F43A8500AF3CA4 /* PostCell.swift */; };
+		9338103A21F43B9900AF3CA4 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338103921F43B9900AF3CA4 /* FeaturedViewController.swift */; };
 		933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35521F39C54002EB839 /* AppDelegate.swift */; };
 		933ED35821F39C54002EB839 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35721F39C54002EB839 /* HomeViewController.swift */; };
 		933ED35E21F39C54002EB839 /* Zooper_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */; };
@@ -52,11 +55,14 @@
 		79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zooper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		932D091021F39E5B00BD2450 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		932D091221F39E6200BD2450 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		932D091421F39EAB00BD2450 /* posts.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = posts.graphql; sourceTree = "<group>"; };
+		932D091421F39EAB00BD2450 /* Posts.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Posts.graphql; sourceTree = "<group>"; };
 		932D091721F3A34300BD2450 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = "Zooper-iOS/PostModel.swift"; sourceTree = "<group>"; };
 		932D091A21F3A4E900BD2450 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		932D091C21F3A70F00BD2450 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9338103121F40F2E00AF3CA4 /* PostSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSubmitViewController.swift; sourceTree = "<group>"; };
+		9338103521F43A6700AF3CA4 /* PostCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCellView.xib; sourceTree = "<group>"; };
+		9338103721F43A8500AF3CA4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		9338103921F43B9900AF3CA4 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		933ED35221F39C54002EB839 /* Zooper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zooper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933ED35521F39C54002EB839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		933ED35721F39C54002EB839 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +128,7 @@
 		932D091621F3A2EE00BD2450 /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				932D091421F39EAB00BD2450 /* posts.graphql */,
+				932D091421F39EAB00BD2450 /* Posts.graphql */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
@@ -176,6 +182,9 @@
 				932D091621F3A2EE00BD2450 /* Queries */,
 				938A1ED021F3C3BF00AC94EE /* Resources */,
 				938A1ECD21F3B70900AC94EE /* Extensions */,
+				9338103521F43A6700AF3CA4 /* PostCellView.xib */,
+				9338103721F43A8500AF3CA4 /* PostCell.swift */,
+				9338103921F43B9900AF3CA4 /* FeaturedViewController.swift */,
 			);
 			path = "Zooper-iOS";
 			sourceTree = "<group>";
@@ -298,7 +307,8 @@
 				938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */,
 				938A1EBC21F3B19700AC94EE /* SwipeableCardViewCard.xib in Resources */,
 				932D091D21F3A70F00BD2450 /* Main.storyboard in Resources */,
-				932D091521F39EAB00BD2450 /* posts.graphql in Resources */,
+				9338103621F43A6700AF3CA4 /* PostCellView.xib in Resources */,
+				932D091521F39EAB00BD2450 /* Posts.graphql in Resources */,
 				938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */,
 				938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */,
 			);
@@ -387,10 +397,12 @@
 				938A1EC621F3B19700AC94EE /* SwipeableCardViewCard.swift in Sources */,
 				9338103221F40F2E00AF3CA4 /* PostSubmitViewController.swift in Sources */,
 				938A1EBB21F3B19700AC94EE /* SwipeableCardViewDataSource.swift in Sources */,
+				9338103821F43A8500AF3CA4 /* PostCell.swift in Sources */,
 				933ED35821F39C54002EB839 /* HomeViewController.swift in Sources */,
 				938A1EC821F3B19700AC94EE /* CGPoint+SwipeableAdditions.swift in Sources */,
 				932D091821F3A34300BD2450 /* PostModel.swift in Sources */,
 				938A1ECA21F3B19700AC94EE /* SwipeableCardViewDelegate.swift in Sources */,
+				9338103A21F43B9900AF3CA4 /* FeaturedViewController.swift in Sources */,
 				938A1EBD21F3B19700AC94EE /* UIView+Constraints.swift in Sources */,
 				A4BFEC2B21F40B1E00BFAC85 /* GradientView.swift in Sources */,
 				933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */,
