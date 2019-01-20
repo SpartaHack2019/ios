@@ -6,7 +6,7 @@ target 'Zooper-iOS' do
   use_frameworks!
 
   # Pods for Zooper-iOS
-  pod 'Apollo', '0.9.4'
+  pod 'Apollo', '~> 0.9.4'
   pod 'pop', '1.0.10'
   pod 'FLAnimatedImage'
   pod 'SDWebImage/GIF'

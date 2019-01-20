@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 protocol SwipeableCardViewDelegate: class {
 
     func didSelect(card: SwipeableCardViewCard, atIndex index: Int)
+
+    func update(card: SwipeableCardViewCard, atIndex index: Int, value alpha: CGFloat)
 
 }

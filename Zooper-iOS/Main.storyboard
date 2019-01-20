@@ -78,22 +78,23 @@
                                     <constraint firstAttribute="width" secondItem="FYT-I9-nNl" secondAttribute="height" multiplier="2:3" id="w2f-Lv-7bY"/>
                                 </constraints>
                             </view>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="lfR-ae-hOD">
-                                <rect key="frame" x="16" y="51" width="343" height="514.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="lfR-ae-hOD">
+                                <rect key="frame" x="-139.5" y="-18" width="654" height="654"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FYT-I9-nNl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="s92-ee-wD1" secondAttribute="top" constant="16" id="Bjh-dy-pRb"/>
+                            <constraint firstItem="FYT-I9-nNl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="s92-ee-wD1" secondAttribute="top" constant="32" id="Bjh-dy-pRb"/>
                             <constraint firstItem="jbc-pE-hr4" firstAttribute="centerY" secondItem="s92-ee-wD1" secondAttribute="centerY" id="GVJ-W0-bqT"/>
+                            <constraint firstItem="lfR-ae-hOD" firstAttribute="centerY" secondItem="s92-ee-wD1" secondAttribute="centerY" id="NmP-gS-bQv"/>
                             <constraint firstItem="FYT-I9-nNl" firstAttribute="leading" secondItem="2dU-YV-8E0" secondAttribute="leading" priority="750" constant="16" id="O9K-AP-x6m"/>
                             <constraint firstItem="2dU-YV-8E0" firstAttribute="trailing" secondItem="FYT-I9-nNl" secondAttribute="trailing" priority="750" constant="16" id="OIk-Kk-IM5"/>
                             <constraint firstItem="2dU-YV-8E0" firstAttribute="trailing" secondItem="FYT-I9-nNl" secondAttribute="trailing" constant="16" id="Ygt-iC-ugn"/>
+                            <constraint firstItem="lfR-ae-hOD" firstAttribute="centerX" secondItem="s92-ee-wD1" secondAttribute="centerX" id="Z9y-q1-exk"/>
                             <constraint firstItem="FYT-I9-nNl" firstAttribute="centerX" secondItem="s92-ee-wD1" secondAttribute="centerX" id="eAj-xe-h8K"/>
                             <constraint firstItem="FYT-I9-nNl" firstAttribute="leading" secondItem="2dU-YV-8E0" secondAttribute="leading" constant="16" id="kOY-Qb-uQ8"/>
                             <constraint firstItem="FYT-I9-nNl" firstAttribute="centerY" secondItem="s92-ee-wD1" secondAttribute="centerY" id="lT2-04-Lml"/>
-                            <constraint firstItem="2dU-YV-8E0" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FYT-I9-nNl" secondAttribute="bottom" constant="16" id="ofg-us-sTN"/>
+                            <constraint firstItem="2dU-YV-8E0" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FYT-I9-nNl" secondAttribute="bottom" constant="32" id="ofg-us-sTN"/>
                             <constraint firstItem="2dU-YV-8E0" firstAttribute="trailing" secondItem="jbc-pE-hr4" secondAttribute="trailing" constant="40" id="oyX-61-Jhf"/>
                             <constraint firstItem="jbc-pE-hr4" firstAttribute="leading" secondItem="2dU-YV-8E0" secondAttribute="leading" constant="40" id="tRs-ky-GQz"/>
                         </constraints>
@@ -107,7 +108,13 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" title="Zooper" largeTitleDisplayMode="always" id="I4l-EX-fVI"/>
+                    <navigationItem key="navigationItem" title="Zooper" largeTitleDisplayMode="always" id="I4l-EX-fVI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="2DK-qa-0ao">
+                            <connections>
+                                <action selector="refresh:" destination="i6w-vO-hug" id="ZOE-wz-93m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="endView" destination="jbc-pE-hr4" id="7Db-fv-pnG"/>
                         <outlet property="love" destination="lfR-ae-hOD" id="lRr-hj-Xdl"/>
@@ -204,7 +211,7 @@
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="32" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -549,15 +556,26 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-3e-qFA">
-                                        <rect key="frame" x="118" y="419.5" width="75" height="31"/>
+                                        <rect key="frame" x="105.5" y="419.5" width="100" height="31"/>
                                         <color key="backgroundColor" red="0.01176470588" green="0.3411764706" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="tLU-0y-l9n"/>
+                                            <constraint firstAttribute="width" constant="100" id="tLU-0y-l9n">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layout.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
                                         <state key="normal" title="Post">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="postButtonPressed:" destination="bRx-7U-SSF" eventType="touchUpInside" id="4pD-0x-BgJ"/>
                                         </connections>
@@ -583,6 +601,7 @@
                             <constraint firstItem="Mu3-n8-Br4" firstAttribute="trailing" secondItem="Bd1-NW-sA9" secondAttribute="trailing" constant="32" id="0zX-Et-Upr"/>
                             <constraint firstItem="Bd1-NW-sA9" firstAttribute="leading" secondItem="Mu3-n8-Br4" secondAttribute="leading" constant="32" id="GlR-8q-6b8"/>
                             <constraint firstItem="Bd1-NW-sA9" firstAttribute="top" secondItem="Mu3-n8-Br4" secondAttribute="top" constant="36.5" id="Xqq-n9-Cfa"/>
+                            <constraint firstItem="Mu3-n8-Br4" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Bd1-NW-sA9" secondAttribute="bottom" constant="32" id="ppQ-cL-xMJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mu3-n8-Br4"/>
                         <userDefinedRuntimeAttributes>

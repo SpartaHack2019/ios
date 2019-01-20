@@ -36,6 +36,8 @@ class PostSubmitViewController: UIViewController, UITextViewDelegate, UIGestureR
     }
     @IBAction func postButtonPressed(_ sender: Any) {
         tabBarController?.selectedIndex = 2
+        navigationController?.popToRootViewController(animated: true)
+
     }
 
     func textViewDidBeginEditing(_ textView: UITextView) {

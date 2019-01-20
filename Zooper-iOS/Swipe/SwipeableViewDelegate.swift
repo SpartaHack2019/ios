@@ -16,4 +16,8 @@ protocol SwipeableViewDelegate: class {
 
     func didEndSwipe(onView view: SwipeableView)
 
+    func didEndSwipeWithError(onView view: SwipeableView)
+
+    func didLike(onView view: SwipeableView)
+
 }

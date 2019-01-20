@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8608CD65E6C6F9C63B0D69CF /* Pods_Zooper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */; };
+		932B30E921F49A3700848C81 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 932B30E821F49A3600848C81 /* schema.json */; };
 		932D091121F39E5C00BD2450 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091021F39E5B00BD2450 /* API.swift */; };
-		932D091321F39E6200BD2450 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 932D091221F39E6200BD2450 /* schema.json */; };
 		932D091521F39EAB00BD2450 /* Posts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 932D091421F39EAB00BD2450 /* Posts.graphql */; };
 		932D091821F3A34300BD2450 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091721F3A34300BD2450 /* PostModel.swift */; };
 		932D091B21F3A4E900BD2450 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D091A21F3A4E900BD2450 /* Apollo.swift */; };
@@ -56,8 +56,8 @@
 		30E025BF75CA3A910073E8AF /* Pods-Zooper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zooper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4D6938AF4C307149068734D8 /* Pods-Zooper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zooper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zooper-iOS/Pods-Zooper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		79E19B7D8B22A031367F7D7C /* Pods_Zooper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zooper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932B30E821F49A3600848C81 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		932D091021F39E5B00BD2450 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		932D091221F39E6200BD2450 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		932D091421F39EAB00BD2450 /* Posts.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Posts.graphql; sourceTree = "<group>"; };
 		932D091721F3A34300BD2450 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = "Zooper-iOS/PostModel.swift"; sourceTree = "<group>"; };
 		932D091A21F3A4E900BD2450 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 		932D091621F3A2EE00BD2450 /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				932D091421F39EAB00BD2450 /* Posts.graphql */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
@@ -184,7 +183,8 @@
 				933ED36121F39C56002EB839 /* LaunchScreen.storyboard */,
 				933ED36421F39C56002EB839 /* Info.plist */,
 				933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */,
-				932D091221F39E6200BD2450 /* schema.json */,
+				932B30E821F49A3600848C81 /* schema.json */,
+				932D091421F39EAB00BD2450 /* Posts.graphql */,
 				938A1EA821F3B18700AC94EE /* Swipe */,
 				932D091921F3A38D00BD2450 /* Models */,
 				932D091621F3A2EE00BD2450 /* Queries */,
@@ -310,11 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				938A1EBE21F3B19700AC94EE /* SampleSwipeableCard.xib in Resources */,
-				932D091321F39E6200BD2450 /* schema.json in Resources */,
 				933ED36321F39C56002EB839 /* LaunchScreen.storyboard in Resources */,
 				933ED36021F39C56002EB839 /* Assets.xcassets in Resources */,
 				938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */,
 				938A1EBC21F3B19700AC94EE /* SwipeableCardViewCard.xib in Resources */,
+				932B30E921F49A3700848C81 /* schema.json in Resources */,
 				932D091D21F3A70F00BD2450 /* Main.storyboard in Resources */,
 				9338103621F43A6700AF3CA4 /* PostCellView.xib in Resources */,
 				932D091521F39EAB00BD2450 /* Posts.graphql in Resources */,

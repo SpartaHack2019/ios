@@ -1,7 +1,7 @@
 PODS:
-  - Apollo (0.9.4):
-    - Apollo/Core (= 0.9.4)
-  - Apollo/Core (0.9.4)
+  - Apollo (0.9.5):
+    - Apollo/Core (= 0.9.5)
+  - Apollo/Core (0.9.5)
   - FLAnimatedImage (1.0.12)
   - pop (1.0.10)
   - SDWebImage/Core (4.4.3)
@@ -10,7 +10,7 @@ PODS:
     - SDWebImage/Core
 
 DEPENDENCIES:
-  - Apollo (= 0.9.4)
+  - Apollo (~> 0.9.4)
   - FLAnimatedImage
   - pop (= 1.0.10)
   - SDWebImage/GIF
@@ -23,11 +23,11 @@ SPEC REPOS:
     - SDWebImage
 
 SPEC CHECKSUMS:
-  Apollo: 450856adbdebcdf28c3c671f81732ac3f9944065
+  Apollo: 19caf3246d292bbb69ecad1bd098661f78222aba
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: 3fc72982e5b683915b142e370c0be9cc710d553a
+PODFILE CHECKSUM: 507270de81a14d4d7f58f49861d1cea312f2db9f
 
 COCOAPODS: 1.5.3

@@ -9,6 +9,7 @@
 import UIKit
 import CoreMotion
 import FLAnimatedImage
+import MessageUI
 
 class SampleSwipeableCard: SwipeableCardViewCard {
 
@@ -91,6 +92,12 @@ class SampleSwipeableCard: SwipeableCardViewCard {
         self.applyShadow(width: CGFloat(0.0), height: CGFloat(0.0))
     }
 
+    @IBAction func flagPressed(_ sender: Any) {
+        print("flag!")
+        guard let url = URL(string: "mailto:jacobloukota@gamil.com?subject=Flag_Content") else { return }
+        UIApplication.shared.open(url)
+    }
+
     private func applyShadow(width: CGFloat, height: CGFloat) {
         if let shadowView = shadowView {
             let shadowPath = UIBezierPath(roundedRect: shadowView.bounds, cornerRadius: 14.0)
@@ -102,5 +109,9 @@ class SampleSwipeableCard: SwipeableCardViewCard {
             shadowView.layer.shadowPath = shadowPath.cgPath
         }
     }
+
+}
+
+extension SampleSwipeableCard: MFMailComposeViewControllerDelegate {
 
 }

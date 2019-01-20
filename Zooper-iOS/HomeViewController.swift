@@ -11,6 +11,7 @@ import FLAnimatedImage
 import SDWebImage
 class HomeViewController: UIViewController, SwipeableCardViewDataSource {
 
+
     @IBOutlet weak var swipeableCardView: SwipeableCardViewContainer!
 
     @IBOutlet weak var endView: RoundUIView!
@@ -26,7 +27,7 @@ class HomeViewController: UIViewController, SwipeableCardViewDataSource {
         loadPosts()
 
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Comfortaa", size: 30)!]
-        //scheduledTimerWithTimeInterval()
+        scheduledTimerWithTimeInterval()
     }
 
     func loadPosts() {
@@ -37,30 +38,36 @@ class HomeViewController: UIViewController, SwipeableCardViewDataSource {
             } else if let error = error {
                 print("Error loading data \(error)")
             }
+            self.postsData.shuffle()
             self.swipeableCardView.reloadData()
         }
         endView.isHidden = true
     }
 
-//    var timer = Timer()
-//    func scheduledTimerWithTimeInterval(){
-//        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
-//        timer =  Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { (timer) in
-//            self.updateCounting()
-//        }
-//    }
-//    var count = 0;
-//    func updateCounting(){
-//        love.isHidden = lovedit.lover
-//        if(!lovedit.lover && count >= 1){
-//            lovedit.lover = true
-//            count = 0
-//        }
-//        else if(!lovedit.lover){
-//            count += 1
-//        }
-//    }
+    var timer = Timer()
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+        timer =  Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { (timer) in
+            self.updateCounting()
+        }
+    }
+    var count = 0;
+    func updateCounting(){
+        love.isHidden = lovedit.lover
+        if(!lovedit.lover && count >= 1){
+            lovedit.lover = true
+            count = 0
+        }
+        else if(!lovedit.lover){
+            count += 1
+        }
+    }
+    @IBAction func refresh(_ sender: Any) {
+        postsData.shuffle()
+        swipeableCardView.reloadData()
+    }
 }
+
 struct lovedit {
     static var lover = true
 }

@@ -103,10 +103,6 @@ class SwipeableCardViewContainer: UIView, SwipeableViewDelegate {
 extension SwipeableCardViewContainer {
 
     func didTap(view: SwipeableView) {
-        if let cardView = view as? SwipeableCardViewCard,
-            let index = cardViews.index(of: cardView) {
-            delegate?.didSelect(card: cardView, atIndex: index)
-        }
     }
 
     func didBeginSwipe(onView view: SwipeableView) {
@@ -118,6 +114,7 @@ extension SwipeableCardViewContainer {
             return
         }
 
+        //lovedit.lover = false
         // Remove swiped card
         view.removeFromSuperview()
 
@@ -143,4 +140,12 @@ extension SwipeableCardViewContainer {
         }
     }
 
+    func didEndSwipeWithError(onView view: SwipeableView) {
+    }
+
+    func didLike(onView view: SwipeableView) {
+//        Apollo.shared.client.perform(mutation: LikePostMutation(postId: "71")) { (result, error) in
+//            print(result?.data?.likePost?.success)
+//        }
+    }
 }
