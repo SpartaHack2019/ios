@@ -8,4 +8,6 @@ target 'Zooper-iOS' do
   # Pods for Zooper-iOS
   pod 'Apollo', '0.9.4'
   pod 'pop', '1.0.10'
+  pod 'FLAnimatedImage'
+  pod 'SDWebImage/GIF'
 end

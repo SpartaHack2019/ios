@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import FLAnimatedImage
+import SDWebImage
 class HomeViewController: UIViewController, SwipeableCardViewDataSource {
 
     @IBOutlet weak var swipeableCardView: SwipeableCardViewContainer!
@@ -48,18 +49,12 @@ extension HomeViewController {
         guard postsData.indices.contains(index) else { return SwipeableCardViewCard() }
 
         let post = postsData[index]
-        var image: UIImage
-        if let url = URL(string: ConfigURL.media + post.imagePath),
-            let data = try? Data(contentsOf: url),
-            let img = UIImage(data: data) {
-            image = img
-        } else {
-            image = #imageLiteral(resourceName: "user_group_man_woman.png")
-        }
+        let image = URL(string: ConfigURL.media + post.imagePath)
+
         let url = URL(string: post.adoptionURL ?? "")
         let viewModel = SampleSwipeableCellViewModel(description: post.description,
                                                      adoptionURL: url,
-                                                     image: image)
+                                                     image: image!)
         let cardView = SampleSwipeableCard()
         cardView.viewModel = viewModel
         return cardView

@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
+import FLAnimatedImage
 struct SampleSwipeableCellViewModel {
 
     let description: String
     let adoptionURL: URL?
-    let image: UIImage
+    let image: URL
 
 }
