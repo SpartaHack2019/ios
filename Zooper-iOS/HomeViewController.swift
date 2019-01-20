@@ -45,7 +45,7 @@ extension HomeViewController {
     }
 
     func card(forItemAtIndex index: Int) -> SwipeableCardViewCard {
-        //guard postsData.indices.contains(index) else { return SwipeableCardViewCard() }
+        guard postsData.indices.contains(index) else { return SwipeableCardViewCard() }
 
         let post = postsData[index]
         var image: UIImage
