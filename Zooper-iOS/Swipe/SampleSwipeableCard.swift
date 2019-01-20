@@ -8,11 +8,12 @@
 
 import UIKit
 import CoreMotion
+import FLAnimatedImage
 
 class SampleSwipeableCard: SwipeableCardViewCard {
 
     @IBOutlet private weak var descriptionLabel: UILabel!
-    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var imageView: FLAnimatedImageView!
     @IBOutlet private weak var backgroundContainerView: UIView!
     @IBOutlet private weak var adoptionView: UIView!
 
@@ -41,7 +42,7 @@ class SampleSwipeableCard: SwipeableCardViewCard {
 
     private func configure(forViewModel viewModel: SampleSwipeableCellViewModel?) {
         if let viewModel = viewModel {
-            imageView.image = viewModel.image
+            imageView.sd_setImage(with: viewModel.image, placeholderImage:UIImage(named: "placeholder.png"))
             descriptionLabel.text = viewModel.description
             adoptionURL = viewModel.adoptionURL
             backgroundContainerView.layer.cornerRadius = 14.0
