@@ -495,9 +495,8 @@
                                     <constraint firstAttribute="height" constant="111" id="a1G-5c-LvG"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick your post:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xug-90-m8n">
-                                <rect key="frame" x="47" y="228" width="280" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your post:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xug-90-m8n">
+                                <rect key="frame" x="47.5" y="228.5" width="280" height="41.5"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -507,6 +506,8 @@
                         <constraints>
                             <constraint firstItem="yI2-1H-R2a" firstAttribute="centerY" secondItem="gBa-rd-d0N" secondAttribute="centerY" id="0KI-CS-oK4"/>
                             <constraint firstItem="yI2-1H-R2a" firstAttribute="centerX" secondItem="gBa-rd-d0N" secondAttribute="centerX" id="24j-6O-CD6"/>
+                            <constraint firstItem="yI2-1H-R2a" firstAttribute="top" secondItem="xug-90-m8n" secondAttribute="bottom" constant="8" id="9xT-oW-KGV"/>
+                            <constraint firstItem="xug-90-m8n" firstAttribute="centerX" secondItem="gBa-rd-d0N" secondAttribute="centerX" id="Ri3-bx-8wq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BQj-4h-bEU"/>
                         <userDefinedRuntimeAttributes>
