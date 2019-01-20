@@ -15,6 +15,7 @@ class PostModel {
     var description: String
     var adoption: Bool
     var adoptionURL: String?
+    var likes: Int?
 
     init(post: AllPostsQuery.Data.AllPost) {
         id = post.id
@@ -22,5 +23,6 @@ class PostModel {
         description = post.description
         adoption = post.adoption
         adoptionURL = post.adoptionUrl
+        likes = post.likes
     }
 }

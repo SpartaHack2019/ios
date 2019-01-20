@@ -4,7 +4,7 @@ import Apollo
 
 public final class AllPostsQuery: GraphQLQuery {
   public let operationDefinition =
-    "query AllPosts {\n  allPosts {\n    __typename\n    id\n    image\n    description\n    adoption\n    adoptionUrl\n  }\n}"
+    "query AllPosts {\n  allPosts {\n    __typename\n    id\n    image\n    description\n    adoption\n    adoptionUrl\n    likes\n  }\n}"
 
   public init() {
   }
@@ -45,6 +45,7 @@ public final class AllPostsQuery: GraphQLQuery {
         GraphQLField("description", type: .nonNull(.scalar(String.self))),
         GraphQLField("adoption", type: .nonNull(.scalar(Bool.self))),
         GraphQLField("adoptionUrl", type: .scalar(String.self)),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -53,8 +54,8 @@ public final class AllPostsQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(id: GraphQLID, image: String, description: String, adoption: Bool, adoptionUrl: String? = nil) {
-        self.init(unsafeResultMap: ["__typename": "PostType", "id": id, "image": image, "description": description, "adoption": adoption, "adoptionUrl": adoptionUrl])
+      public init(id: GraphQLID, image: String, description: String, adoption: Bool, adoptionUrl: String? = nil, likes: Int) {
+        self.init(unsafeResultMap: ["__typename": "PostType", "id": id, "image": image, "description": description, "adoption": adoption, "adoptionUrl": adoptionUrl, "likes": likes])
       }
 
       public var __typename: String {
@@ -108,6 +109,15 @@ public final class AllPostsQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "adoptionUrl")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return resultMap["likes"]! as! Int
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "likes")
         }
       }
     }

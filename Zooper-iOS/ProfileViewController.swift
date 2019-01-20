@@ -1,5 +1,5 @@
 //
-//  FeaturedViewController.swift
+//  ProfileViewController.swift
 //  Zooper-iOS
 //
 //  Created by Austin Evans on 1/20/19.
@@ -8,16 +8,10 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var segmentView: UISegmentedControl!
+class ProfileViewController: UIViewController {
+    var postsData = [PostModel]()
 
-    var postsData = [PostModel]() {
-        didSet {
-            updateCurrentModels()
-        }
-    }
-    var currentModels = [PostModel]()
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +27,6 @@ class FeaturedViewController: UIViewController {
         )
 
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Comfortaa", size: 30)!]
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,9 +38,9 @@ class FeaturedViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = collectionView.indexPathsForSelectedItems else { return }
 
-        if segue.identifier == "PostDetail" {
+        if segue.identifier == "PostDetail2" {
             let destiation = segue.destination as! PostDetailViewController
-            destiation.viewModel = currentModels[indexPath[0].row]
+            destiation.viewModel = postsData[indexPath[0].row]
         }
     }
 
@@ -59,41 +52,18 @@ class FeaturedViewController: UIViewController {
             } else if let error = error {
                 print("Error loading data \(error)")
             }
+            self.postsData.sort(by: { (pm1, pm2) -> Bool in
+                return pm1.id > pm2.id
+            })
+            self.postsData = self.postsData[0..<6].compactMap({$0})
+            self.collectionView.reloadData()
         }
     }
-
-    @IBAction func indexChanged(_ sender: UISegmentedControl) {
-        updateCurrentModels()
-    }
-
-    func updateCurrentModels() {
-        guard postsData.count >= 30 else { return }
-
-        switch segmentView.selectedSegmentIndex {
-        case 0:
-            print("today")
-            currentModels = postsData[0..<9].compactMap({$0})
-        case 1:
-            print("week")
-            currentModels = postsData[9..<18].compactMap({$0})
-        case 2:
-            print("month")
-            currentModels = postsData[18..<27].compactMap({$0})
-        default:
-            break
-        }
-        self.currentModels.sort(by: { (pm1, pm2) -> Bool in
-            return pm1.likes ?? 0 > pm2.likes ?? 0
-        })
-        collectionView.reloadData()
-    }
-
-    
 }
 
-extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "PostDetail", sender: nil)
+        performSegue(withIdentifier: "PostDetail2", sender: nil)
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -112,16 +82,16 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewDele
     }
 }
 
-extension FeaturedViewController: UICollectionViewDataSource {
+extension ProfileViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return currentModels.count
+        return postsData.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard currentModels.indices.contains(indexPath.row) else { return UICollectionViewCell() }
+        guard postsData.indices.contains(indexPath.row) else { return UICollectionViewCell() }
 
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postCell", for: indexPath) as? PostCell {
-            let post = currentModels[indexPath.row]
+            let post = postsData[indexPath.row]
             cell.imageURL = URL(string: ConfigURL.media + post.imagePath)
             cell.likesLabel.text = String(post.likes ?? 0)
             return cell
@@ -129,3 +99,4 @@ extension FeaturedViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
 }
+

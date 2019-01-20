@@ -44,6 +44,9 @@
 		938A1ED421F3C5C500AC94EE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */; };
 		938A1ED521F3C5C700AC94EE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */; };
 		938A1ED621F3C5CA00AC94EE /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */; };
+		93F0B37721F45B760029C918 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0B37621F45B760029C918 /* PostDetailViewController.swift */; };
+		93F0B37F21F47D6D0029C918 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0B37E21F47D6D0029C918 /* ProfileViewController.swift */; };
+		93F0B38121F47F690029C918 /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0B38021F47F690029C918 /* EdgeInsetLabel.swift */; };
 		A4BA370321F4277B007F05C0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA370221F4277B007F05C0 /* PostViewController.swift */; };
 		A4BFEC2921F40AF600BFAC85 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFEC2821F40AF600BFAC85 /* PostViewController.swift */; };
 		A4BFEC2B21F40B1E00BFAC85 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */; };
@@ -91,6 +94,9 @@
 		938A1ED121F3C57600AC94EE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		938A1ED221F3C57600AC94EE /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		938A1ED321F3C57600AC94EE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		93F0B37621F45B760029C918 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		93F0B37E21F47D6D0029C918 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		93F0B38021F47F690029C918 /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
 		A4BA370221F4277B007F05C0 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A4BFEC2821F40AF600BFAC85 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -171,8 +177,10 @@
 				933ED35521F39C54002EB839 /* AppDelegate.swift */,
 				933ED35721F39C54002EB839 /* HomeViewController.swift */,
 				9338103121F40F2E00AF3CA4 /* PostSubmitViewController.swift */,
+				93F0B37621F45B760029C918 /* PostDetailViewController.swift */,
+				9338103921F43B9900AF3CA4 /* FeaturedViewController.swift */,
+				93F0B37E21F47D6D0029C918 /* ProfileViewController.swift */,
 				932D091C21F3A70F00BD2450 /* Main.storyboard */,
-				933ED35F21F39C56002EB839 /* Assets.xcassets */,
 				933ED36121F39C56002EB839 /* LaunchScreen.storyboard */,
 				933ED36421F39C56002EB839 /* Info.plist */,
 				933ED35C21F39C54002EB839 /* Zooper_iOS.xcdatamodeld */,
@@ -184,7 +192,7 @@
 				938A1ECD21F3B70900AC94EE /* Extensions */,
 				9338103521F43A6700AF3CA4 /* PostCellView.xib */,
 				9338103721F43A8500AF3CA4 /* PostCell.swift */,
-				9338103921F43B9900AF3CA4 /* FeaturedViewController.swift */,
+				933ED35F21F39C56002EB839 /* Assets.xcassets */,
 			);
 			path = "Zooper-iOS";
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 		938A1ECD21F3B70900AC94EE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				93F0B38021F47F690029C918 /* EdgeInsetLabel.swift */,
 				A4BFEC2A21F40B1E00BFAC85 /* GradientView.swift */,
 				938A1EB721F3B19600AC94EE /* CGPoint+SwipeableAdditions.swift */,
 				938A1EAE21F3B19400AC94EE /* CGRect+SwipeAdditions.swift */,
@@ -393,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938A1EC121F3B19700AC94EE /* SwipeDirection.swift in Sources */,
+				93F0B38121F47F690029C918 /* EdgeInsetLabel.swift in Sources */,
 				9355393521F3E29D008C7694 /* Colors.swift in Sources */,
 				938A1EC621F3B19700AC94EE /* SwipeableCardViewCard.swift in Sources */,
 				9338103221F40F2E00AF3CA4 /* PostSubmitViewController.swift in Sources */,
@@ -404,6 +414,8 @@
 				938A1ECA21F3B19700AC94EE /* SwipeableCardViewDelegate.swift in Sources */,
 				9338103A21F43B9900AF3CA4 /* FeaturedViewController.swift in Sources */,
 				938A1EBD21F3B19700AC94EE /* UIView+Constraints.swift in Sources */,
+				93F0B37F21F47D6D0029C918 /* ProfileViewController.swift in Sources */,
+				93F0B37721F45B760029C918 /* PostDetailViewController.swift in Sources */,
 				A4BFEC2B21F40B1E00BFAC85 /* GradientView.swift in Sources */,
 				933ED35621F39C54002EB839 /* AppDelegate.swift in Sources */,
 				938A1EC321F3B19700AC94EE /* NibView.swift in Sources */,
